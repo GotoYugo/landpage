@@ -1,3 +1,6 @@
+"use client"; // precisa ser Client Component para animar
+import { motion } from "framer-motion";
+
 interface ExperienceItem {
   role: string;
   company: string;
@@ -33,11 +36,18 @@ export default function Experience() {
         <h2 className="text-4xl font-semibold mb-10">Experiência Profissional</h2>
         <div className="space-y-8">
           {experiences.map((exp, idx) => (
-            <div key={idx} className="bg-[#1B1D22] p-6 rounded-lg shadow-md">
+            <motion.div
+              key={idx}
+              className="bg-[#1B1D22] p-6 rounded-lg shadow-md transition-transform hover:translate-y-[-2px]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: idx * 0.2 }}
+            >
               <h3 className="text-2xl font-medium">{exp.role}</h3>
               <span className="text-gray-400">{exp.company} | {exp.period}</span>
               <p className="mt-2 text-gray-300">{exp.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
