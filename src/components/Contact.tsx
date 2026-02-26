@@ -1,4 +1,5 @@
 "use client";
+
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
@@ -10,7 +11,7 @@ export default function Contact() {
           <a
             href="https://www.linkedin.com/in/seu-perfil"
             target="_blank"
-            className="flex items-center gap-3 bg-[#1B1D22] hover:bg-[#27292F] transition-colors text-gray-200 px-6 py-4 rounded-lg shadow-md font-medium"
+            className="flex items-center gap-3 bg-[#1B1D22] hover:bg-[#27292F] transition-transform hover:translate-y-[-2px] text-gray-200 px-6 py-4 rounded-lg shadow-md font-medium"
           >
             <FaLinkedin className="text-xl" />
             LinkedIn
@@ -18,14 +19,14 @@ export default function Contact() {
           <a
             href="https://github.com/seu-usuario"
             target="_blank"
-            className="flex items-center gap-3 bg-[#1B1D22] hover:bg-[#27292F] transition-colors text-gray-200 px-6 py-4 rounded-lg shadow-md font-medium"
+            className="flex items-center gap-3 bg-[#1B1D22] hover:bg-[#27292F] transition-transform hover:translate-y-[-2px] text-gray-200 px-6 py-4 rounded-lg shadow-md font-medium"
           >
             <FaGithub className="text-xl" />
             GitHub
           </a>
           <a
             href="mailto:seuemail@dominio.com"
-            className="flex items-center gap-3 bg-[#1B1D22] hover:bg-[#27292F] transition-colors text-gray-200 px-6 py-4 rounded-lg shadow-md font-medium"
+            className="flex items-center gap-3 bg-[#1B1D22] hover:bg-[#27292F] transition-transform hover:translate-y-[-2px] text-gray-200 px-6 py-4 rounded-lg shadow-md font-medium"
           >
             <FaEnvelope className="text-xl" />
             E-mail
