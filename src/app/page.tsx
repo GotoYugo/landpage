@@ -1,5 +1,7 @@
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
+import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
           title="Desenvolvedor Back-End"
           subtitle="Experiência sólida em desenvolvimento de sistemas, arquitetura organizada e foco em soluções escaláveis."
         />
+        <Experience />
+        <Contact />
       </main>
     </>
   );
